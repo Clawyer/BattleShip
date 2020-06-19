@@ -32,7 +32,7 @@ class GameBoard extends JPanel {
 	public static final Color SHOOT_COLOR = new Color(180, 0, 0); 
 	public static final Color MISS_SHOOT_COLOR = new Color(0,41,58);
 	
-	// Constructor
+	// Constructeur
 	public GameBoard() {
 
 		super(); 
@@ -90,7 +90,7 @@ class GameBoard extends JPanel {
 		}
 	}
 
-	// permet de changer la direction du navire à placer en fonctin du clic de la souris + previsualisation du navire sur le curseur de la souris
+	// permet de changer la direction du navire Ã  placer en fonctin du clic de la souris + previsualisation du navire sur le curseur de la souris
 	private class BoardMouseListener implements MouseListener {
 		public void mouseReleased(MouseEvent me) {
 			if (SwingUtilities.isRightMouseButton(me) && isPlacingShips()) {
@@ -139,7 +139,7 @@ class GameBoard extends JPanel {
 
 		}
 		if (shipsToPlace.length == 0) {
-			JOptionPane.showMessageDialog(null, "Tous les navires ont été placé");
+			JOptionPane.showMessageDialog(null, "Tous les navires ont Ã©tÃ© placÃ©");
 			for (int y = 0; y < 10; y++) {
 				for (int x = 0; x < 10; x++) {
 					if(grid[y][x] != 0) {
