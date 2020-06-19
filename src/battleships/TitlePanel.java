@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 
 class TitlePanel extends JPanel {
     
-    //  Fields
+  
     private JLabel titleLabel;
     private JLabel subtitleLabel;
     
